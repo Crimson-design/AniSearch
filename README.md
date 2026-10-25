@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AniSearch 🎌
 
-## Getting Started
+**Discover your next favorite anime.**
 
-First, run the development server:
+AniSearch is an anime search and discovery platform built with **Next.js, TypeScript, and Supabase**. It helps users explore anime, search for titles, browse genres, and discover information about their favorite shows.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+- 🔎 **Anime Search** — Find anime by title.
+- 🎭 **Genre Exploration** — Discover anime across different genres.
+- 📖 **Anime Details** — Explore synopses, release years, and cover art.
+- ⭐ **Ratings & Reviews** — Rate anime and share opinions.
+- 📚 **Personalized Watchlists** — Keep track of anime you want to watch.
+- ⚡ **Database Integration** — Use Supabase to support data storage and search functionality.
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, React, TypeScript
+- **Backend & Database:** Supabase
+- **Package Manager:** npm
+- **Development Tools:** Git and GitHub
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) and npm installed.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Crimson-design/AniSearch.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd AniSearch
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Configure your environment variables.
+
+   Create a `.env.local` file in the project root and add the Supabase credentials required by your application:
+
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+
+   Use the exact variable names expected by your code. Never commit your `.env.local` file or expose private service-role keys.
+
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📁 Project Structure
+
+```text
+AniSearch/
+├── app/          # Application pages and layouts
+├── components/   # Reusable UI components
+├── lib/          # Shared utilities and integrations
+├── public/       # Static assets
+├── scripts/      # Project scripts
+├── .gitignore
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🗺️ Roadmap
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [ ] Improve anime search and filtering.
+- [ ] Enhance the anime detail pages.
+- [ ] Expand watchlist functionality.
+- [ ] Improve the user experience and responsive design.
+- [ ] Deploy the application.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📚 Resources
 
-## Learn More
+- [Next.js Documentation](https://nextjs.org/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [Supabase Documentation](https://supabase.com/docs)
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍💻 Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Ashwin Jagarallamudi**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+GitHub: [@Crimson-design](https://github.com/Crimson-design)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*AniSearch — Find your next anime adventure.*
