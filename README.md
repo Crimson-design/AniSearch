@@ -2,21 +2,24 @@
 
 **Discover your next favorite anime.**
 
-AniSearch is an anime search and discovery platform built with **Next.js, TypeScript, and Supabase**. It helps users explore anime, search for titles, browse genres, and discover information about their favorite shows.
+🌐 **Live demo:** [ani-search-ptqp.vercel.app](https://ani-search-ptqp.vercel.app/)
+
+AniSearch is an anime search and discovery platform built with **Next.js, TypeScript, and Supabase**. It helps users explore anime, search for titles, and discover information about their favorite shows.
 
 ## ✨ Features
 
 - 🔎 **Anime Search** — Find anime by title.
-- 🎭 **Genre Exploration** — Discover anime across different genres.
 - 📖 **Anime Details** — Explore synopses, release years, and cover art.
-- ⭐ **Ratings & Reviews** — Rate anime and share opinions.
-- 📚 **Personalized Watchlists** — Keep track of anime you want to watch.
-- ⚡ **Database Integration** — Use Supabase to support data storage and search functionality.
+- ➕ **Add Anime** — Add titles to the database.
+- ⭐ **Ratings & Reviews** — Rate anime and keep track of your own reviews.
+- 📚 **Watch Later** — Save anime you want to watch.
+- ⚡ **Database Integration** — Supabase handles data storage and search.
 
 ## 🛠️ Tech Stack
 
 - **Frontend:** Next.js, React, TypeScript
 - **Backend & Database:** Supabase
+- **Hosting:** Vercel
 - **Package Manager:** npm
 - **Development Tools:** Git and GitHub
 
@@ -48,14 +51,14 @@ Make sure you have [Node.js](https://nodejs.org/) and npm installed.
 
 4. Configure your environment variables.
 
-   Create a `.env.local` file in the project root and add the Supabase credentials required by your application:
+   Create a `.env.local` file in the project root and add your Supabase credentials:
 
    ```env
    NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
    ```
 
-   Use the exact variable names expected by your code. Never commit your `.env.local` file or expose private service-role keys.
+   Never commit your `.env.local` file or expose private service-role keys.
 
 5. Start the development server:
 
@@ -81,11 +84,11 @@ AniSearch/
 
 ## 🗺️ Roadmap
 
+- [x] Deploy the application.
 - [ ] Improve anime search and filtering.
 - [ ] Enhance the anime detail pages.
 - [ ] Expand watchlist functionality.
 - [ ] Improve the user experience and responsive design.
-- [ ] Deploy the application.
 
 ## 📚 Resources
 
